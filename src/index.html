@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ASP.NET Core SignalR with TypeScript and Webpack</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar__header">
+                <h4>Users and groups</h4>
+            </div>
+            <div class="sidebar__content">
+                <ul id="sidebar__groups-list" class="users"></ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__header">
+                <div class="main__form">
+                    <form>
+                        <input id="usernameInput" type="text" placeholder="Enter your username" />
+                        <button id="btnJoinChat" class="btn btn-primary" >
+                            Join chat
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="main__content">
+                <div class="content__chat">
+                    <div id="divMessages" class="messages"></div>
+                    <div class="input-zone">
+                        <input id="tbMessage" placeholder="Type a message" class="input-zone-input" type="text" />
+                        <button id="btnSend">Send</button>
+                    </div>
+                </div>
+                <div class="content__online-users">
+                    <div class="online-users__header">
+                        <h3>Online Users</h3>
+                    </div>
+                    <ul class="online-users__list"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
